@@ -1,0 +1,77 @@
+
+@tailwind base;
+
+
+:root {
+    --primary: '#646daa';
+    --secondary: #959dd4    ;
+  }
+
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 6px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--primary);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border: 3px solid var(--primary);
+
+  }
+  .each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 350px;
+  }
+  
+  .each-slide-effect span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+  }
+  .indicator {
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    border: 1px #666 solid;
+    margin: 0;
+  }
+  
+  .indicator.active {
+    color: #fff;
+    background: #666;
+  }
+
+  body{
+    background: #f8f9fa;
+  }
+
+  .swiper-wrapper {
+    height: max-content !important;
+   
+    width: max-content;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: "" !important;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: "" !important;
+
+}
+
+.product-thumb .swiper-slide.swiper-slide-thumb-active>.slide\:border-indigo-600 {
+    --tw-border-opacity: 1;
+    border-color: rgb(79 70 229 / var(--tw-border-opacity));
+}
+@tailwind components;
+@tailwind utilities;
